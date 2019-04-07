@@ -13,7 +13,7 @@ public class Demo {
 		boolean h = true;
 		h = false;
 		
-		//System.out.println(h);
-		//System.out.println('你'+0); //unicode 国际标准码表
+		System.out.println(h);
+		System.out.println('你'+0); //unicode 国际标准码表
 	}
 }
