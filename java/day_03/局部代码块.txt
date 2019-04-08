@@ -1,0 +1,11 @@
+public class Demo {
+	public static void main(String[] args){
+		
+		{//局部代码块可以定义局部变量的生命周期
+			int a = 3;
+			System.out.println(a);
+		}
+		
+		
+	}
+}
