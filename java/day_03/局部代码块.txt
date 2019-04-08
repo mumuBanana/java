@@ -6,6 +6,70 @@ public class Demo {
 			System.out.println(a);
 		}
 		
+		\n : 回车
+		\t : 制表符
+		\b : 退格
+		\r : 按下回车键
+		\ : 转译符 对\后面的字符转义
 		
+		window系统中回车符其实是由两个符号组成的 \r\n
+		linux中回车符是 \n
+		
+	}
+	
+	//定义函数的格式
+	修饰符 返回值类型 函数名(参数类型 形式参数,参数类型 形式参数,....){
+		执行语句;
+		return 返回值;
+	}
+	
+	//返回值类型和参数类型没有直接关系
+	public static int add(int a,int b){
+		return a + b
+	}
+	
+	//特殊情况
+	没有具体的返回值，return的返回值直接分号结束
+	返回值类型怎么体现？因为没有具体值，所以不可以写具体的数据类型
+	在JAVA中只能用一个关键字来表示这种情况 ： void
+	
+	没有具体的返回值，返回类型用void表示
+	
+	如果返回值的类型是void，那么函数中的return语句可以省略不写
+	
+	public static void add(){
+		System.out.println("hello world");
+		//return ;
+	}
+	/*
+	函数的特点
+		1.定义函数可以将功能代码经行封装
+		2.便于对该功能进行复用
+		3.函数只有被调用才会执行
+		4.函数的出现提高了代码的复用性
+		5.对于函数没有具体返回值的情况，返回值类型用关键字void表示，那么该函数中的return语句如果在最后一行可以省略不写
+	注意：
+		1.函数中只能调用函数，不可以在函数内部定义函数
+		2.定义函数时，函数的结果应该返回给调用者，交由调用者处理
+	*/
+	
+	
+	//函数的重载
+	//在同一个类中，允许存在一个以上的同名函数,只要他们的参数个数或者参数类型不同即可
+	1.同一个类
+	2.同名
+	3.参数个数不同 or 参数类型不同
+	4.函数重载和返回值类型无关
+	5.JAVA是严谨性语言，如果函数出现的调用的不确定性，会编译失败
+	public static int add(int a,int b){
+		return a + b
+	}
+	
+	public static double add(double a, double b){
+		return a + b
+	}
+	
+	public static int add(int a,int b,int c){
+		return a + b + c
 	}
 }
